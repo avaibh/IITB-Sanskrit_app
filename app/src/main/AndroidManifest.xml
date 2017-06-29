@@ -1,48 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.sanskrit">
+    package="com.SansTranslate.android.sanskrit">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.android.sanskrit.MainActivity">
+        <activity android:name="com.SansTranslate.android.sanskrit.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.android.sanskrit.NumbersActivity"
+        <activity android:name="com.SansTranslate.android.sanskrit.NumbersActivity"
             android:label="@string/category_numbers"
-                    android:parentActivityName="com.example.android.sanskrit.MainActivity">
+                    android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity">
                     <!-- Parent activity meta-data to support 4.0 and lower -->
                     <meta-data
                         android:name="android.support.PARENT_ACTIVITY"
-                        android:value="com.example.android.sanskrit.MainActivity"/>
+                        android:value="com.SansTranslate.android.sanskrit.MainActivity"/>
                 </activity>
-        <activity android:name="com.example.android.sanskrit.PhrasesActivity" android:label="Phrases"
-            android:parentActivityName="com.example.android.sanskrit.MainActivity">
+        <activity android:name="com.SansTranslate.android.sanskrit.PhrasesActivity" android:label="Phrases"
+            android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.android.sanskrit.MainActivity"/>
+                android:value="com.SansTranslate.android.sanskrit.MainActivity"/>
         </activity>
-        <activity android:name="com.example.android.sanskrit.FamilyActivity" android:label="Family"
-            android:parentActivityName="com.example.android.sanskrit.MainActivity">
+        <activity android:name="com.SansTranslate.android.sanskrit.FamilyActivity" android:label="Family"
+            android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.android.sanskrit.MainActivity"/>
+                android:value="com.SansTranslate.android.sanskrit.MainActivity"/>
         </activity>
-        <activity android:name="com.example.android.sanskrit.ColorsActivity" android:label="Colors"
-            android:parentActivityName="com.example.android.sanskrit.MainActivity">
+        <activity android:name="com.SansTranslate.android.sanskrit.ColorsActivity" android:label="Colors"
+            android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.android.sanskrit.MainActivity"/>
+                android:value="com.SansTranslate.android.sanskrit.MainActivity"/>
+        </activity>
+        <activity android:name="com.SansTranslate.android.sanskrit.TestActivity" android:label="Game Quiz"
+            android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.TEST_ACTIVITY"
+                android:value="com.SansTranslate.android.sanskrit.MainActivity"/>
         </activity>
     </application>
 

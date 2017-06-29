@@ -1,4 +1,4 @@
-package com.example.android.sanskrit;
+package com.SansTranslate.android.sanskrit;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

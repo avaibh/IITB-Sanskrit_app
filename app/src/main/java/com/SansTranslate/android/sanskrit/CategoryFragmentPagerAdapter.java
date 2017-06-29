@@ -1,4 +1,4 @@
-package com.example.android.sanskrit;
+package com.SansTranslate.android.sanskrit;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;

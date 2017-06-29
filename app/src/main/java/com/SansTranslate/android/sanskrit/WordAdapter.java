@@ -2,7 +2,7 @@
  * Created by vaibhavagrawal on 16/06/17.
  */
 
-package com.example.android.sanskrit;
+package com.SansTranslate.android.sanskrit;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

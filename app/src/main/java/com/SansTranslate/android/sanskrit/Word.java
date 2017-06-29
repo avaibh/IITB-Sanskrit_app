@@ -1,4 +1,4 @@
-package com.example.android.sanskrit;
+package com.SansTranslate.android.sanskrit;
 
 /**
  * {@link Word} represents a vocabulary word that the user wants to learn.

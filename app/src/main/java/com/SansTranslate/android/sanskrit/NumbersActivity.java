@@ -1,16 +1,16 @@
-package com.example.android.sanskrit;
+package com.SansTranslate.android.sanskrit;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class PhrasesActivity extends AppCompatActivity {
+public class NumbersActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container, new PhrasesFragment())
+                .replace(R.id.container, new NumbersFragment())
                 .commit();
     }
 }

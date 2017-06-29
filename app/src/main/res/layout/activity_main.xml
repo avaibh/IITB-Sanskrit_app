@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,7 +13,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/primary_color"
-    tools:context="com.example.android.sanskrit.MainActivity">
+    tools:context="com.SansTranslate.android.sanskrit.MainActivity">
 
     <android.support.design.widget.TabLayout
         android:id="@+id/sliding_tabs"
@@ -22,6 +28,14 @@
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
-
 </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_games_black_24dp"
+        app:backgroundTint="@color/fab"/>
+</RelativeLayout>
