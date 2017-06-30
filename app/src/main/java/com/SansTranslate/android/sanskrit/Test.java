@@ -10,9 +10,14 @@ public class Test {
 
     /** Sanskrit translation for the word */
     private String mAnswer;
-    public Test(String question, String answer) {
+
+    // Audio resource ID for the word
+    private int mAudioResourceId = R.raw.number_one;
+
+    public Test(String question, String answer, int audioResourceId) {
         mQuestion = question;
         mAnswer = answer;
+        mAudioResourceId = audioResourceId;
     }
     public String getQuestion() {
 
@@ -25,5 +30,10 @@ public class Test {
     public String getAnswer() {
 
         return mAnswer;
+    }
+
+    public int getAudioResourceId() {
+
+        return mAudioResourceId;
     }
 }
