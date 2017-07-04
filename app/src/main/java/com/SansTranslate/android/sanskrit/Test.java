@@ -14,19 +14,33 @@ public class Test {
     // Audio resource ID for the word
     private int mAudioResourceId = R.raw.number_one;
 
-    public Test(String question, String answer, int audioResourceId) {
+    //hindi word for the english word
+    private String mHindiWord;
+
+    //Image for the question
+    private int mImageResourceId ;
+
+    public Test(String question, String answer, String hindiWord, int audioResourceId, int imageResourceId) {
         mQuestion = question;
         mAnswer = answer;
+        mHindiWord = hindiWord;
         mAudioResourceId = audioResourceId;
+        mImageResourceId = imageResourceId;
     }
+
+    // Methods for the functions (all are public)
+
     public String getQuestion() {
 
         return mQuestion;
     }
 
-    /**
-     * Get the Sanskrit translation of the word.
-     */
+    public String getHindiWord(){
+
+        return mHindiWord;
+    }
+
+
     public String getAnswer() {
 
         return mAnswer;
@@ -35,5 +49,10 @@ public class Test {
     public int getAudioResourceId() {
 
         return mAudioResourceId;
+    }
+
+    public int getImageResourceId(){
+
+        return mImageResourceId;
     }
 }

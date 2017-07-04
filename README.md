@@ -1,8 +1,20 @@
-Miwok App
+SansTranslate
 ===================================
 
-This app displays lists of vocabulary words for the user to learn the Miwok language.
-Used in a Udacity course in the Beginning Android Nanodegree.
+Translation App for Sanskrit.This app displays lists of vocabulary words for the user to learn the Sanskrit language.My first app will teach you the Sanskrit language with a simple tap. You can learn:
+
+- How to speak numbers.
+- How to call 'Dad' in Sanskrit language.
+- What's my eye color? It's श्याम (Black).
+- And some common English phrases.
+
+Device Tested On
+----------------
+
+- Google Nexus 5X API 26 (Android O) - Emulator
+- Google Pixel XL API 25 (Android Nougat)
+- One Plus 3T API 25 (Android Nougat)
+- Samsung J7 API 23 (Android Marshmallow)
 
 Pre-requisites
 --------------
@@ -29,19 +41,10 @@ submitting a pull request through GitHub. Please see CONTRIBUTING.md for more de
 License
 -------
 
-Copyright 2016 The Android Open Source Project, Inc.
+Copyright 2017 Vaibhav Agrawal.
 
-Licensed to the Apache Software Foundation (ASF) under one or more contributor
-license agreements.  See the NOTICE file distributed with this work for
-additional information regarding copyright ownership.  The ASF licenses this
-file to you under the Apache License, Version 2.0 (the "License"); you may not
-use this file except in compliance with the License.  You may obtain a copy of
-the License at
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
 http://www.apache.org/licenses/LICENSE-2.0
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
-License for the specific language governing permissions and limitations under
-the License.
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.

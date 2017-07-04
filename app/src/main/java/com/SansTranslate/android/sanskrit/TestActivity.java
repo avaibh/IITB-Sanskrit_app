@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -72,35 +73,35 @@ public class TestActivity  extends AppCompatActivity {
         mAudioManager = (AudioManager) TestActivity.this.getSystemService(Context.AUDIO_SERVICE);
 
         final ArrayList<Test> test = new ArrayList<Test>();
-        test.add(new Test("ONE", "एकम्", R.raw.question1));
-        test.add(new Test("TWO", "द्वे", R.raw.question2));
-        test.add(new Test("THREE", "त्रीणि", R.raw.question3));
-        test.add(new Test("FOUR", "चत्वारि", R.raw.question4));
-        test.add(new Test("FIVE", "पञ्च", R.raw.question5));
-        test.add(new Test("SIX", "षट", R.raw.question6));
-        test.add(new Test("SEVEN", "सप्त", R.raw.question7));
-        test.add(new Test("EIGHT", "अष्ट", R.raw.question8));
-        test.add(new Test("NINE", "नव", R.raw.question9));
-        test.add(new Test("TEN", "दश", R.raw.question10));
+        test.add(new Test("ONE", "एकम्", "एक", R.raw.question1, R.drawable.number_one));
+        test.add(new Test("TWO", "द्वे", "दो", R.raw.question2, R.drawable.number_two));
+        test.add(new Test("THREE", "त्रीणि", "तीन", R.raw.question3, R.drawable.number_three));
+        test.add(new Test("FOUR", "चत्वारि", "चार", R.raw.question4, R.drawable.number_four));
+        test.add(new Test("FIVE", "पञ्च", "पंज", R.raw.question5, R.drawable.number_five));
+        test.add(new Test("SIX", "षट", "छह", R.raw.question6, R.drawable.number_six));
+        test.add(new Test("SEVEN", "सप्त","सात", R.raw.question7, R.drawable.number_seven));
+        test.add(new Test("EIGHT", "अष्ट", "आठ", R.raw.question8, R.drawable.number_eight));
+        test.add(new Test("NINE", "नव", "नौ", R.raw.question9, R.drawable.number_nine));
+        test.add(new Test("TEN", "दश", "दस", R.raw.question10, R.drawable.number_ten));
 
-        test.add(new Test("RED", "लोहितः", R.raw.question11));
-        test.add(new Test("GREEN", "पलाशः", R.raw.question12));
-        test.add(new Test("BROWN", "श्यावः", R.raw.question13));
-        test.add(new Test("GRAY", "धूसरः", R.raw.question14));
-        test.add(new Test("BLACK", "श्यामः", R.raw.question15));
-        test.add(new Test("WHITE", "श्वेतः", R.raw.question16));
-        test.add(new Test("YELLOW", "हरिद्राभः", R.raw.question17));
+        test.add(new Test("RED", "लोहितः", "लाल", R.raw.question11, R.drawable.color_red));
+        test.add(new Test("GREEN", "पलाशः", "हरा", R.raw.question12, R.drawable.color_green));
+        test.add(new Test("BROWN", "श्यावः", "भूरा", R.raw.question13, R.drawable.color_brown));
+        test.add(new Test("GRAY", "धूसरः", "धूसर", R.raw.question14, R.drawable.color_gray));
+        test.add(new Test("BLACK", "श्यामः", "काला", R.raw.question15, R.drawable.color_black));
+        test.add(new Test("WHITE", "श्वेतः", "सफेद", R.raw.question16, R.drawable.color_white));
+        test.add(new Test("YELLOW", "हरिद्राभः", "पीला", R.raw.question17, R.drawable.color_dusty_yellow));
 
-        test.add(new Test("FATHER", "पिता", R.raw.question18));
-        test.add(new Test("MOTHER", "माता", R.raw.question19));
-        test.add(new Test("SON", "पुत्रः", R.raw.question20));
-        test.add(new Test("DAUGHTER", "पुत्री", R.raw.question21));
-        test.add(new Test("OLDER BROTHER", "ज्येष्ठभ्राता", R.raw.question22));
-        test.add(new Test("YOUNGER BROTHER", "कनिष्ठभ्राता", R.raw.question23));
-        test.add(new Test("OLDER SISTER", "ज्येष्ठभगिनी", R.raw.question24));
-        test.add(new Test("YOUNGER SISTER", "कनिष्ठभगिनी", R.raw.question25));
-        test.add(new Test("GRANDMOTHER", "पितामही", R.raw.question26));
-        test.add(new Test("GRANDFATHER", "पितामहः", R.raw.question27));
+        test.add(new Test("FATHER", "पिता", "पिता", R.raw.question18, R.drawable.family_father));
+        test.add(new Test("MOTHER", "माता", "माता", R.raw.question19, R.drawable.family_mother));
+        test.add(new Test("SON", "पुत्रः", "बेटा", R.raw.question20, R.drawable.family_son));
+        test.add(new Test("DAUGHTER", "पुत्री", "बेटी", R.raw.question21, R.drawable.family_daughter));
+        test.add(new Test("OLDER BROTHER", "ज्येष्ठभ्राता", "बड़ा भाई", R.raw.question22, R.drawable.family_older_brother));
+        test.add(new Test("YOUNGER BROTHER", "कनिष्ठभ्राता", "छोटा भाई", R.raw.question23, R.drawable.family_younger_brother));
+        test.add(new Test("OLDER SISTER", "ज्येष्ठभगिनी", "दीदी", R.raw.question24, R.drawable.family_older_sister));
+        test.add(new Test("YOUNGER SISTER", "कनिष्ठभगिनी", "छोेटी बहन", R.raw.question25, R.drawable.family_younger_sister));
+        test.add(new Test("GRANDMOTHER", "पितामही", "दादी", R.raw.question26, R.drawable.family_grandmother));
+        test.add(new Test("GRANDFATHER", "पितामहः", "दादा", R.raw.question27, R.drawable.family_grandfather));
         final int quesInt = getQuesAns(test);
 
         Button submit = (Button) findViewById(R.id.submit_button);
@@ -112,6 +113,8 @@ public class TestActivity  extends AppCompatActivity {
                 getQuesAns(test);
                 TextView resultTextView = (TextView) findViewById(R.id.result_text_view);
                 resultTextView.setText("");
+                ImageView resultImageView = (ImageView) findViewById(R.id.result_image_view);
+                resultImageView.setImageResource(0);
                 RadioButton radioButton_1 = (RadioButton) findViewById(R.id.opt1_radio_button);
                 RadioButton radioButton_2 = (RadioButton) findViewById(R.id.opt2_radio_button);
                 RadioButton radioButton_3 = (RadioButton) findViewById(R.id.opt3_radio_button);
@@ -153,9 +156,13 @@ public class TestActivity  extends AppCompatActivity {
         Random randomQuests = new Random();
         int randomInt = randomQuests.nextInt(27);
         String randomQuestion = test.get(randomInt).getQuestion();
-        String ques = "What is the correct sanskrit translation of the english word " + randomQuestion +"?"+ "\n\nअस्य आंग्लपदस्य \""+randomQuestion +"\" संस्कृते समीचीनम् अनुवादः कथम्? ";
+        String randomHindiQuestion = test.get(randomInt).getHindiWord();
+        String ques = "अस्य आंग्लपदस्य \""+randomHindiQuestion +"\" संस्कृते समीचीनम् अनुवादः कथम्? ";
         String error = "Unknown Error";
         questionTextView.setText(ques);
+
+        ImageView quizImageView = (ImageView) findViewById(R.id.image_quiz);
+        quizImageView.setImageResource(test.get(randomInt).getImageResourceId());
 
         RadioButton radioButton_1 = (RadioButton) findViewById(R.id.opt1_radio_button);
         RadioButton radioButton_2 = (RadioButton) findViewById(R.id.opt2_radio_button);
@@ -177,10 +184,10 @@ public class TestActivity  extends AppCompatActivity {
                 correctAnswer = radioButton_1;
                 break;
             case 2:
-                radioButton_1.setText(test.get(randomQuests.nextInt(27)).getAnswer());
                 radioButton_2.setText(test.get(randomInt).getAnswer());
                 while (true) {
                     if (randomQuests.nextInt(27) != randomInt) {
+                        radioButton_1.setText(test.get(randomQuests.nextInt(27)).getAnswer());
                         radioButton_3.setText(test.get(randomQuests.nextInt(27)).getAnswer());
                         radioButton_4.setText(test.get(randomQuests.nextInt(27)).getAnswer());
                         break;
@@ -193,11 +200,11 @@ public class TestActivity  extends AppCompatActivity {
                     if (randomQuests.nextInt(27) != randomInt) {
                         radioButton_1.setText(test.get(randomQuests.nextInt(27)).getAnswer());
                         radioButton_2.setText(test.get(randomQuests.nextInt(27)).getAnswer());
-                        radioButton_3.setText(test.get(randomInt).getAnswer());
                         radioButton_4.setText(test.get(randomQuests.nextInt(27)).getAnswer());
                         break;
                     }
                 }
+                radioButton_3.setText(test.get(randomInt).getAnswer());
                 correctAnswer = radioButton_3;
                 break;
             case 4:
@@ -229,14 +236,20 @@ public class TestActivity  extends AppCompatActivity {
             resultTextView.setText("Bravo! Correct Answer\n" + "साधु! उचित प्रतिवदति");
             String color = getString(Integer.parseInt(String.valueOf(R.color.green)));
             resultTextView.setTextColor(Color.parseColor(color));
-            resultTextView.setTextSize(30);
+            resultTextView.setTextSize(20);
+
+            ImageView resultImageView = (ImageView) findViewById(R.id.result_image_view);
+            resultImageView.setImageResource(R.drawable.ic_thumb_up_white_24dp);
         } else {
             // not checked
             TextView resultTextView = (TextView) findViewById(R.id.result_text_view);
             resultTextView.setText("Wrong Answer! Please try again.\n" + "अनुचित प्रतिवदति! पुनः प्रयत्न करोति");
             String color = getString(Integer.parseInt(String.valueOf(R.color.red)));
             resultTextView.setTextColor(Color.parseColor(color));
-            resultTextView.setTextSize(30);
+            resultTextView.setTextSize(20);
+
+            ImageView resultImageView = (ImageView) findViewById(R.id.result_image_view);
+            resultImageView.setImageResource(R.drawable.ic_loop_white_24dp);
         }
     }
     @Override

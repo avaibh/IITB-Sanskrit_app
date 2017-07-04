@@ -73,16 +73,16 @@ public class NumbersFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("one", "एकम् (ekam)", R.drawable.number_one, R.raw.number_one));
-        words.add(new Word("two", "द्वे (dve)", R.drawable.number_two, R.raw.number_two));
-        words.add(new Word("three", "त्रीणि (trīṇi)", R.drawable.number_three, R.raw.number_three));
-        words.add(new Word("four", "चत्वारि (catvāri)", R.drawable.number_four, R.raw.number_four));
-        words.add(new Word("five", "पञ्च (pañca)", R.drawable.number_five, R.raw.number_five));
-        words.add(new Word("six", "षट (ṣaṭ)", R.drawable.number_six, R.raw.number_six));
-        words.add(new Word("seven", "सप्त (sapta)", R.drawable.number_seven, R.raw.number_seven));
-        words.add(new Word("eight", "अष्ट (aṣṭa)", R.drawable.number_eight, R.raw.number_eight));
-        words.add(new Word("nine", "नव (nava)", R.drawable.number_nine, R.raw.number_nine));
-        words.add(new Word("ten", "दश (daśa)", R.drawable.number_ten, R.raw.number_ten));
+        words.add(new Word("एक", "एकम् (ekam)", R.drawable.number_one, R.raw.number_one));
+        words.add(new Word("दो", "द्वे (dve)", R.drawable.number_two, R.raw.number_two));
+        words.add(new Word("तीन", "त्रीणि (trīṇi)", R.drawable.number_three, R.raw.number_three));
+        words.add(new Word("चार", "चत्वारि (catvāri)", R.drawable.number_four, R.raw.number_four));
+        words.add(new Word("पंज", "पञ्च (pañca)", R.drawable.number_five, R.raw.number_five));
+        words.add(new Word("छह", "षट (ṣaṭ)", R.drawable.number_six, R.raw.number_six));
+        words.add(new Word("सात", "सप्त (sapta)", R.drawable.number_seven, R.raw.number_seven));
+        words.add(new Word("आठ", "अष्ट (aṣṭa)", R.drawable.number_eight, R.raw.number_eight));
+        words.add(new Word("नौ", "नव (nava)", R.drawable.number_nine, R.raw.number_nine));
+        words.add(new Word("दस", "दश (daśa)", R.drawable.number_ten, R.raw.number_ten));
 
         WordAdapter adapter = new WordAdapter(getActivity(), words, R.color.category_numbers);
 

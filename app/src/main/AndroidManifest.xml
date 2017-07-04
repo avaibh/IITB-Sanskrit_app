@@ -17,11 +17,11 @@
         </activity>
         <activity android:name="com.SansTranslate.android.sanskrit.NumbersActivity"
             android:label="@string/category_numbers"
-                    android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity">
+                    android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity" >
                     <!-- Parent activity meta-data to support 4.0 and lower -->
                     <meta-data
                         android:name="android.support.PARENT_ACTIVITY"
-                        android:value="com.SansTranslate.android.sanskrit.MainActivity"/>
+                        android:value="com.SansTranslate.android.sanskrit.MainActivity" />
                 </activity>
         <activity android:name="com.SansTranslate.android.sanskrit.PhrasesActivity" android:label="Phrases"
             android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity">

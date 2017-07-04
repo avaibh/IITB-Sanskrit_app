@@ -64,16 +64,16 @@ public class FamilyFragment extends Fragment {
         // Create a list of words
         final ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("father","पिता (Pitā)",R.drawable.family_father,R.raw.family_father));
-        words.add(new Word("mother","माता (Mātā)",R.drawable.family_mother,R.raw.family_mother));
-        words.add(new Word("son","पुत्रः (Putraḥ)",R.drawable.family_son,R.raw.family_son));
-        words.add(new Word("daughter","पुत्री (Putrī)",R.drawable.family_daughter,R.raw.family_daughter));
-        words.add(new Word("older brother","ज्येष्ठभ्राता (Jyeṣṭhabhrātā)",R.drawable.family_older_brother,R.raw.family_older_brother));
-        words.add(new Word("younger brother","कनिष्ठभ्राता (Kaniṣṭhabhrātā)",R.drawable.family_younger_brother,R.raw.family_younger_brother));
-        words.add(new Word("older sister","ज्येष्ठभगिनी (Jyeṣṭhabhaginī)",R.drawable.family_older_sister,R.raw.family_older_sister));
-        words.add(new Word("younger sister","कनिष्ठभगिनी (Kaniṣṭhabhaginī)",R.drawable.family_younger_sister,R.raw.family_younger_sister));
-        words.add(new Word("grandmother","पितामही (Pitāmahī)",R.drawable.family_grandmother,R.raw.family_grandmother));
-        words.add(new Word("grandfather","पितामहः (Pitāmahaḥ)",R.drawable.family_grandfather,R.raw.family_grandfather));
+        words.add(new Word("पापा","पिता (Pitā)",R.drawable.family_father,R.raw.family_father));
+        words.add(new Word("मम्मी","माता (Mātā)",R.drawable.family_mother,R.raw.family_mother));
+        words.add(new Word("बेटा","पुत्रः (Putraḥ)",R.drawable.family_son,R.raw.family_son));
+        words.add(new Word("बेटी","पुत्री (Putrī)",R.drawable.family_daughter,R.raw.family_daughter));
+        words.add(new Word("बड़ा भाई","ज्येष्ठभ्राता (Jyeṣṭhabhrātā)",R.drawable.family_older_brother,R.raw.family_older_brother));
+        words.add(new Word("छोटा भाई","कनिष्ठभ्राता (Kaniṣṭhabhrātā)",R.drawable.family_younger_brother,R.raw.family_younger_brother));
+        words.add(new Word("दीदी","ज्येष्ठभगिनी (Jyeṣṭhabhaginī)",R.drawable.family_older_sister,R.raw.family_older_sister));
+        words.add(new Word("छोेटी बहन","कनिष्ठभगिनी (Kaniṣṭhabhaginī)",R.drawable.family_younger_sister,R.raw.family_younger_sister));
+        words.add(new Word("दादी","पितामही (Pitāmahī)",R.drawable.family_grandmother,R.raw.family_grandmother));
+        words.add(new Word("दादा","पितामहः (Pitāmahaḥ)",R.drawable.family_grandfather,R.raw.family_grandfather));
 
         WordAdapter adapter =
                 new WordAdapter(getActivity(), words, R.color.category_family);

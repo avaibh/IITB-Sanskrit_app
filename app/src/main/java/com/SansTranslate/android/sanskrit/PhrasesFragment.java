@@ -82,16 +82,16 @@ public class PhrasesFragment extends Fragment {
         // Create a list of words
         final ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("Welcome","स्वागतम् (svāgatam)",R.raw.phrase_welcome));
-        words.add(new Word("What is your name?","तव नाम किम्? (tava nāma kim?)",R.raw.phrase_what_is_your_name));
-        words.add(new Word("My name is...","मम नाम... (mama nāma ...)", R.raw.phrase_my_name_is));
-        words.add(new Word("How are you?","कथमस्ति भवान्? (kathamasti bhavān?)",R.raw.phrase_how_are_you_feeling));
-        words.add(new Word("I’m feeling good.","अहं कुशली (ahaṃ kuśalī)",R.raw.phrase_im_feeling_good));
-        words.add(new Word("Where are you going?","भवान् कुत्र गच्छति?",R.raw.phrase_where_are_you_going));
-        words.add(new Word("I am going to...","अहम्...गच्छामि (aham...gacchAmi)",R.raw.phrase_im_coming));
-        words.add(new Word("Good morning","सुप्रभातम् (suprabhātam)",R.raw.phrase_goodmorning));
-        words.add(new Word("Good night","शुभरात्री (śubharātrī)",R.raw.phrase_goodnight));
-        words.add(new Word("Have a nice day","सुदिनमस्तु (sudinamastu)",R.raw.phrase_niceday));
+        words.add(new Word("स्वागत हे","स्वागतम् (svāgatam)",R.raw.phrase_welcome));
+        words.add(new Word("आपका नाम क्या है?","तव नाम किम्? (tava nāma kim?)",R.raw.phrase_what_is_your_name));
+        words.add(new Word("मेरा नाम...है","मम नाम... (mama nāma ...)", R.raw.phrase_my_name_is));
+        words.add(new Word("क्या हाल है?","कथमस्ति भवान्? (kathamasti bhavān?)",R.raw.phrase_how_are_you_feeling));
+        words.add(new Word("मैं अच्छा महसूस कर रहा हूँ","अहं कुशली (ahaṃ kuśalī)",R.raw.phrase_im_feeling_good));
+        words.add(new Word("तुम कहाँ जा रहे हो?","भवान् कुत्र गच्छति?",R.raw.phrase_where_are_you_going));
+        words.add(new Word("मैं...जा रहा हूँ","अहम्...गच्छामि (aham...gacchAmi)",R.raw.phrase_im_coming));
+        words.add(new Word("शुभ प्रभात","सुप्रभातम् (suprabhātam)",R.raw.phrase_goodmorning));
+        words.add(new Word("शुभ रात्रि","शुभरात्री (śubharātrī)",R.raw.phrase_goodnight));
+        words.add(new Word("आपका दिन शुभ हो","सुदिनमस्तु (sudinamastu)",R.raw.phrase_niceday));
 
         WordAdapter adapter =
                 new WordAdapter(getActivity(), words, R.color.category_phrases);
