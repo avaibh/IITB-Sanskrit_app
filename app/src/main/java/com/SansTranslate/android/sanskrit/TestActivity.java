@@ -137,7 +137,7 @@ public class TestActivity  extends AppCompatActivity {
 
                 if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
 
-                    mMediaPlayer = MediaPlayer.create(TestActivity.this, test.get(quesInt).getAudioResourceId());
+                    mMediaPlayer = MediaPlayer.create(TestActivity.this, R.raw.que);
 
                     // Start the audio file
                     mMediaPlayer.start();
@@ -157,7 +157,7 @@ public class TestActivity  extends AppCompatActivity {
         int randomInt = randomQuests.nextInt(27);
         String randomQuestion = test.get(randomInt).getQuestion();
         String randomHindiQuestion = test.get(randomInt).getHindiWord();
-        String ques = "किमिदं?";
+        String ques = "किम् इदं?";
         String error = "Unknown Error";
         questionTextView.setText(ques);
 
@@ -238,16 +238,23 @@ public class TestActivity  extends AppCompatActivity {
             resultTextView.setTextColor(Color.parseColor(color));
             resultTextView.setTextSize(20);
 
+            MediaPlayer mp = MediaPlayer.create(TestActivity.this, R.raw.ans_1); // sound is inside res/raw/mysound
+            mp.start();
+
+
             ImageView resultImageView = (ImageView) findViewById(R.id.result_image_view);
             resultImageView.setImageResource(R.drawable.ic_thumb_up_white_24dp);
 
         } else {
             // not checked
             TextView resultTextView = (TextView) findViewById(R.id.result_text_view);
-            resultTextView.setText("अनुचित प्रतिवदति! पुनः प्रयत्न करोति");
+            resultTextView.setText("पुनः प्रयत्न करोति");
             String color = getString(Integer.parseInt(String.valueOf(R.color.red)));
             resultTextView.setTextColor(Color.parseColor(color));
             resultTextView.setTextSize(20);
+
+            MediaPlayer mp = MediaPlayer.create(TestActivity.this, R.raw.ans_2); // sound is inside res/raw/mysound
+            mp.start();
 
             ImageView resultImageView = (ImageView) findViewById(R.id.result_image_view);
             resultImageView.setImageResource(R.drawable.ic_loop_white_24dp);

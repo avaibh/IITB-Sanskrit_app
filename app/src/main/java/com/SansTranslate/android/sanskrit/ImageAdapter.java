@@ -36,7 +36,7 @@ public class ImageAdapter extends BaseAdapter {
             R.drawable.number_intro,
             R.drawable.color_intro,
             R.drawable.family_intro,
-            R.drawable.phrases_intro,
+            R.drawable.phrases_intro1,
             R.drawable.sports_intro,
             R.drawable.time_intro,
             R.drawable.sky_intro,
