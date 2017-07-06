@@ -13,9 +13,9 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/white2"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:background="@color/question_background"
             android:orientation="horizontal">
 
             <ImageView
@@ -24,6 +24,7 @@
                 android:layout_height="@dimen/list_item_height"
                 android:layout_gravity="center"
                 android:padding="4dp"
+                android:background="@color/white2"
                 tools:src="@mipmap/ic_launcher" />
 
             <TextView
@@ -31,13 +32,13 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@color/question_background"
                 android:fontFamily="sans-serif-condensed"
                 android:gravity="left"
                 android:padding="16dp"
                 android:textColor="@color/white1"
                 android:textSize="30sp"
-                tools:text="अस्य आंग्लपदस्य एक संस्कृते समीचीनम् अनुवादः कथम्?" />
+                tools:text="?"
+                android:layout_gravity="center_vertical"/>
         </LinearLayout>
 
         <View
