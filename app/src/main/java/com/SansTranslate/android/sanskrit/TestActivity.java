@@ -157,7 +157,7 @@ public class TestActivity  extends AppCompatActivity {
         int randomInt = randomQuests.nextInt(27);
         String randomQuestion = test.get(randomInt).getQuestion();
         String randomHindiQuestion = test.get(randomInt).getHindiWord();
-        String ques = "अस्य आंग्लपदस्य \""+randomHindiQuestion +"\" संस्कृते समीचीनम् अनुवादः कथम्? ";
+        String ques = "किमिदं?";
         String error = "Unknown Error";
         questionTextView.setText(ques);
 

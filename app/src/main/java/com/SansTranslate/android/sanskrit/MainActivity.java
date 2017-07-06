@@ -25,35 +25,51 @@ public class MainActivity extends AppCompatActivity {
                                     int position, long id) {
         // Create a new intent to open the {@link NumbersActivity}
                 if (position == 0){
-                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.school_1); // sound is inside res/raw/mysound
+                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.categ_1); // sound is inside res/raw/mysound
                     mp.start();
                     Toast.makeText(MainActivity.this, "Tap and Hold to see the magic", Toast.LENGTH_SHORT).show();
                 }else if (position == 1){
-                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.school_1); // sound is inside res/raw/mysound
+                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.categ_2); // sound is inside res/raw/mysound
                     mp.start();
                     Toast.makeText(MainActivity.this, "Tap and Hold to see the magic", Toast.LENGTH_SHORT).show();
                 }else if (position == 2){
-                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.school_1); // sound is inside res/raw/mysound
+                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.categ_11); // sound is inside res/raw/mysound
                     mp.start();
                     Toast.makeText(MainActivity.this, "Tap and Hold to see the magic", Toast.LENGTH_SHORT).show();
                 }else if( position == 3){
-                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.school_1); // sound is inside res/raw/mysound
+                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.categ_10); // sound is inside res/raw/mysound
                     mp.start();
                     Toast.makeText(MainActivity.this, "Tap and Hold to see the magic", Toast.LENGTH_SHORT).show();
                 }else if( position == 4){
-                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.school_1); // sound is inside res/raw/mysound
+                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.categ_12); // sound is inside res/raw/mysound
                     mp.start();
                     Toast.makeText(MainActivity.this, "Tap and Hold to see the magic", Toast.LENGTH_SHORT).show();
                 }else if( position == 5){
-                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.school_1); // sound is inside res/raw/mysound
+                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.categ_9); // sound is inside res/raw/mysound
                     mp.start();
                     Toast.makeText(MainActivity.this, "Tap and Hold to see the magic", Toast.LENGTH_SHORT).show();
                 }else if( position == 6){
-                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.school_1); // sound is inside res/raw/mysound
+                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.categ_3); // sound is inside res/raw/mysound
                     mp.start();
                     Toast.makeText(MainActivity.this, "Tap and Hold to see the magic", Toast.LENGTH_SHORT).show();
                 }else if( position == 7){
-                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.school_1); // sound is inside res/raw/mysound
+                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.categ_4); // sound is inside res/raw/mysound
+                    mp.start();
+                    Toast.makeText(MainActivity.this, "Tap and Hold to see the magic", Toast.LENGTH_SHORT).show();
+                }else if( position == 8){
+                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.categ_5); // sound is inside res/raw/mysound
+                    mp.start();
+                    Toast.makeText(MainActivity.this, "Tap and Hold to see the magic", Toast.LENGTH_SHORT).show();
+                }else if( position == 9){
+                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.categ_6); // sound is inside res/raw/mysound
+                    mp.start();
+                    Toast.makeText(MainActivity.this, "Tap and Hold to see the magic", Toast.LENGTH_SHORT).show();
+                }else if( position == 10){
+                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.categ_7); // sound is inside res/raw/mysound
+                    mp.start();
+                    Toast.makeText(MainActivity.this, "Tap and Hold to see the magic", Toast.LENGTH_SHORT).show();
+                }else if( position == 11){
+                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.categ_8); // sound is inside res/raw/mysound
                     mp.start();
                     Toast.makeText(MainActivity.this, "Tap and Hold to see the magic", Toast.LENGTH_SHORT).show();
                 }
@@ -92,6 +108,22 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }else if( position == 7){
                 Intent intent = new Intent(MainActivity.this, TimeActivity.class);
+                // Start the new activity
+                startActivity(intent);
+            }else if( position == 8){
+                Intent intent = new Intent(MainActivity.this, SkyActivity.class);
+                // Start the new activity
+                startActivity(intent);
+            }else if( position == 9){
+                Intent intent = new Intent(MainActivity.this, WaterActivity.class);
+                // Start the new activity
+                startActivity(intent);
+            }else if( position == 10){
+                Intent intent = new Intent(MainActivity.this, TreeActivity.class);
+                // Start the new activity
+                startActivity(intent);
+            }else if( position == 11){
+                Intent intent = new Intent(MainActivity.this, FlowerActivity.class);
                 // Start the new activity
                 startActivity(intent);
             }

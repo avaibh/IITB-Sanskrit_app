@@ -33,12 +33,16 @@ public class ImageAdapter extends BaseAdapter {
     private Integer[] mThumbIds = {
             R.drawable.temple_intro,
             R.drawable.school_intro,
-            R.drawable.ic_format_list_numbered_black_24dp,
+            R.drawable.number_intro,
             R.drawable.color_intro,
             R.drawable.family_intro,
             R.drawable.phrases_intro,
             R.drawable.sports_intro,
-            R.drawable.time_intro
+            R.drawable.time_intro,
+            R.drawable.sky_intro,
+            R.drawable.water_intro,
+            R.drawable.tree_intro,
+            R.drawable.flower_intro
     };
 
     // create a new ImageView for each item referenced by the Adapter

@@ -74,17 +74,17 @@ public class SportsActivity extends AppCompatActivity {
 
         // Create a list of words
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("","पिता",R.drawable.sports_1,R.raw.sports_1));
-        words.add(new Word("","माता",R.drawable.sports_2,R.raw.sports_1));
-        words.add(new Word("","पुत्रः",R.drawable.sports_3,R.raw.sports_1));
-        words.add(new Word("","पुत्री",R.drawable.sports_4,R.raw.sports_1));
-        words.add(new Word("","ज्येष्ठभ्राता",R.drawable.sports_5,R.raw.sports_1));
-        words.add(new Word("","कनिष्ठभ्रात",R.drawable.sports_6,R.raw.sports_1));
-        words.add(new Word("","ज्येष्ठभगिनी",R.drawable.sports_7,R.raw.sports_1));
-        words.add(new Word("","कनिष्ठभगिन",R.drawable.sports_8,R.raw.sports_1));
-        words.add(new Word("","पितामही",R.drawable.sports_9,R.raw.sports_1));
-        words.add(new Word("","पितामहः",R.drawable.sports_10,R.raw.sports_1));
-        words.add(new Word("","पितामहः",R.drawable.sports_11,R.raw.sports_1));
+        words.add(new Word("","मल्लयुद्धम्",R.drawable.sports_1,R.raw.sports_1));
+        words.add(new Word("","काचगोलिका",R.drawable.sports_2,R.raw.sports_2));
+        words.add(new Word("","यष्टिक्रीडा",R.drawable.sports_3,R.raw.sports_3));
+        words.add(new Word("","चतुरङ्गक्रीडा",R.drawable.sports_4,R.raw.sports_4));
+        words.add(new Word("","भ्रमरिका",R.drawable.sports_5,R.raw.sports_5));
+        words.add(new Word("","भ्रामसूत्रम्",R.drawable.sports_6,R.raw.sports_6));
+        words.add(new Word("","क्रीडाग्रामः",R.drawable.sports_7,R.raw.sports_7));
+        words.add(new Word("","क्रीडावलयः",R.drawable.sports_8,R.raw.sports_8));
+        words.add(new Word("","क्रीडाङ्गणम्",R.drawable.sports_9,R.raw.sports_9));
+        words.add(new Word("","धावनस्पधां",R.drawable.sports_10,R.raw.sports_10));
+        words.add(new Word("","सुदीर्धधावनम्",R.drawable.sports_11,R.raw.sports_11));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.

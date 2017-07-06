@@ -7,18 +7,22 @@
     <string name="category_phrases">वाक्यांशों</string>
 
     <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
-    <string name="category_colors">रंग</string>
+    <string name="category_colors">वर्णाः</string>
 
     <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
-    <string name="category_numbers">संख्या</string>
+    <string name="category_numbers">सङ्ख्याः</string>
 
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
-    <string name="category_family">परिवार के सदस्य</string>
+    <string name="category_family">सम्बन्धी</string>
 
     <string name="category_temple">देवालयः</string>
     <string name="category_school">विद्यालयः</string>
-    <string name="category_sports">क्रीद</string>
-    <string name="category_time">समय</string>
+    <string name="category_sports">क्रीडाः</string>
+    <string name="category_time">कालः</string>
+    <string name="category_sky">निसर्गः - आकाशः</string>
+    <string name="category_water">निसर्गः - जलम्</string>
+    <string name="category_tree">वृक्षभागाः</string>
+    <string name="category_flower">विविधपुष्पाणि</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

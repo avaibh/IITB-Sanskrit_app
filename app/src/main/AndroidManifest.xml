@@ -7,7 +7,10 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:versionCode = "1"
+        android:versionName = "1">
+
         <activity android:name="com.SansTranslate.android.sanskrit.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -72,6 +75,34 @@
                 android:name="android.support.TIME_ACTIVITY"
                 android:value="com.SansTranslate.android.sanskrit.MainActivity"/>
         </activity>
+        <activity android:name="com.SansTranslate.android.sanskrit.SkyActivity" android:label="@string/category_sky"
+            android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.SKY_ACTIVITY"
+                android:value="com.SansTranslate.android.sanskrit.MainActivity"/>
+        </activity>
+        <activity android:name="com.SansTranslate.android.sanskrit.WaterActivity" android:label="@string/category_water"
+            android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.WATER_ACTIVITY"
+                android:value="com.SansTranslate.android.sanskrit.MainActivity"/>
+        </activity>
+        <activity android:name="com.SansTranslate.android.sanskrit.TreeActivity" android:label="@string/category_tree"
+            android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.TREE_ACTIVITY"
+                android:value="com.SansTranslate.android.sanskrit.MainActivity"/>
+        </activity>
+        <activity android:name="com.SansTranslate.android.sanskrit.FlowerActivity" android:label="@string/category_flower"
+            android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.FLOWER_ACTIVITY"
+                android:value="com.SansTranslate.android.sanskrit.MainActivity"/>
+        </activity>
         <activity android:name="com.SansTranslate.android.sanskrit.TestActivity" android:label="Game Quiz"
             android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
@@ -79,6 +110,7 @@
                 android:name="android.support.TEST_ACTIVITY"
                 android:value="com.SansTranslate.android.sanskrit.MainActivity"/>
         </activity>
+
     </application>
 
 </manifest>

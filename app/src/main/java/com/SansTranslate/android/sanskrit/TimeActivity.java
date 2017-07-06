@@ -74,18 +74,19 @@ public class TimeActivity  extends AppCompatActivity {
 
         // Create a list of words
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("","पिता",R.drawable.time_1,R.raw.sports_1));
-        words.add(new Word("","माता",R.drawable.time_2,R.raw.sports_1));
-        words.add(new Word("","पुत्रः",R.drawable.time_3,R.raw.sports_1));
-        words.add(new Word("","पुत्री",R.drawable.time_4,R.raw.sports_1));
-        words.add(new Word("","ज्येष्ठभ्राता",R.drawable.time_5,R.raw.sports_1));
-        words.add(new Word("","कनिष्ठभ्रात",R.drawable.time_6,R.raw.sports_1));
-        words.add(new Word("","ज्येष्ठभगिनी",R.drawable.time_7,R.raw.sports_1));
-        words.add(new Word("","कनिष्ठभगिन",R.drawable.time_8,R.raw.sports_1));
-        words.add(new Word("","पितामही",R.drawable.time_9,R.raw.sports_1));
-        words.add(new Word("","पितामहः",R.drawable.time_10,R.raw.sports_1));
-        words.add(new Word("","पितामहः",R.drawable.time_11,R.raw.sports_1));
-        words.add(new Word("","पितामहः",R.drawable.time_12,R.raw.sports_1));
+        words.add(new Word("","घटी",R.drawable.time_1,R.raw.time_1));
+        words.add(new Word("","सूर्यघटी",R.drawable.time_2,R.raw.time_2));
+        words.add(new Word("","सैकतघटी",R.drawable.time_3,R.raw.time_3));
+        words.add(new Word("","पञ्चवादनम्",R.drawable.time_4,R.raw.time_4));
+        words.add(new Word("","षड्वादनम्",R.drawable.time_5,R.raw.time_5));
+        words.add(new Word("","सप्तवादनम्",R.drawable.time_6,R.raw.time_6));
+        words.add(new Word("","अष्टवादनम्",R.drawable.time_7,R.raw.time_7));
+        words.add(new Word("","नववादनम्",R.drawable.time_8,R.raw.time_8));
+        words.add(new Word("","दशवादनम्",R.drawable.time_9,R.raw.time_9));
+        words.add(new Word("","एकादशवादनम्",R.drawable.time_10,R.raw.time_10));
+        words.add(new Word("","द्वादशवादनम्",R.drawable.time_11,R.raw.time_11));
+        words.add(new Word("","सपादनववादनम्",R.drawable.time_12,R.raw.time_12));
+        words.add(new Word("","सार्धनववादनम्",R.drawable.time_13,R.raw.time_13));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
