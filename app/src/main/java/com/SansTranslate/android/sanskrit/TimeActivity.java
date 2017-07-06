@@ -1,24 +1,23 @@
 package com.SansTranslate.android.sanskrit;
 
-
 import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 /**
- * A simple {@link Fragment} subclass.
+ * Created by vaibhavagrawal on 05/07/17.
  */
-public class PhrasesFragment extends Fragment {
 
+public class TimeActivity  extends AppCompatActivity {
+
+    /** Handles playback of all the sound files */
     private MediaPlayer mMediaPlayer;
 
     /** Handles audio focus when playing a sound file */
@@ -65,46 +64,56 @@ public class PhrasesFragment extends Fragment {
         }
     };
 
-
-    public PhrasesFragment() {
-        // Required empty public constructor
-    }
-
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
-        View rootView = inflater.inflate(R.layout.word_list, container, false);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.word_list);
 
         // Create and setup the {@link AudioManager} to request audio focus
-        mAudioManager = (AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);
+        mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         // Create a list of words
         final ArrayList<Word> words = new ArrayList<Word>();
+        words.add(new Word("","पिता",R.drawable.time_1,R.raw.sports_1));
+        words.add(new Word("","माता",R.drawable.time_2,R.raw.sports_1));
+        words.add(new Word("","पुत्रः",R.drawable.time_3,R.raw.sports_1));
+        words.add(new Word("","पुत्री",R.drawable.time_4,R.raw.sports_1));
+        words.add(new Word("","ज्येष्ठभ्राता",R.drawable.time_5,R.raw.sports_1));
+        words.add(new Word("","कनिष्ठभ्रात",R.drawable.time_6,R.raw.sports_1));
+        words.add(new Word("","ज्येष्ठभगिनी",R.drawable.time_7,R.raw.sports_1));
+        words.add(new Word("","कनिष्ठभगिन",R.drawable.time_8,R.raw.sports_1));
+        words.add(new Word("","पितामही",R.drawable.time_9,R.raw.sports_1));
+        words.add(new Word("","पितामहः",R.drawable.time_10,R.raw.sports_1));
+        words.add(new Word("","पितामहः",R.drawable.time_11,R.raw.sports_1));
+        words.add(new Word("","पितामहः",R.drawable.time_12,R.raw.sports_1));
 
-        words.add(new Word("स्वागत हे","स्वागतम् (svāgatam)",R.raw.phrase_welcome));
-        words.add(new Word("आपका नाम क्या है?","तव नाम किम्? (tava nāma kim?)",R.raw.phrase_what_is_your_name));
-        words.add(new Word("मेरा नाम...है","मम नाम... (mama nāma ...)", R.raw.phrase_my_name_is));
-        words.add(new Word("क्या हाल है?","कथमस्ति भवान्? (kathamasti bhavān?)",R.raw.phrase_how_are_you_feeling));
-        words.add(new Word("मैं अच्छा महसूस कर रहा हूँ","अहं कुशली (ahaṃ kuśalī)",R.raw.phrase_im_feeling_good));
-        words.add(new Word("तुम कहाँ जा रहे हो?","भवान् कुत्र गच्छति?",R.raw.phrase_where_are_you_going));
-        words.add(new Word("मैं...जा रहा हूँ","अहम्...गच्छामि (aham...gacchAmi)",R.raw.phrase_im_coming));
-        words.add(new Word("शुभ प्रभात","सुप्रभातम् (suprabhātam)",R.raw.phrase_goodmorning));
-        words.add(new Word("शुभ रात्रि","शुभरात्री (śubharātrī)",R.raw.phrase_goodnight));
-        words.add(new Word("आपका दिन शुभ हो","सुदिनमस्तु (sudinamastu)",R.raw.phrase_niceday));
+        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
+        // adapter knows how to create list items for each item in the list.
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_family);
 
-        WordAdapter adapter =
-                new WordAdapter(getActivity(), words, R.color.category_phrases);
+        // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
+        // There should be a {@link ListView} with the view ID called list, which is declared in the
+        // word_list.xml layout file.
+        ListView listView = (ListView) findViewById(R.id.list);
 
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
-
+        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
 
+        // Set a click listener to play the audio when the list item is clicked on
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                // Release the media player if it currently exists because we are about to
+                // play a different sound file
                 releaseMediaPlayer();
+
+                // Get the {@link Word} object at the given position the user clicked on
                 Word word = words.get(position);
+
+                // Request audio focus so in order to play the audio file. The app needs to play a
+                // short audio file, so we will request audio focus with a short amount of time
+                // with AUDIOFOCUS_GAIN_TRANSIENT.
                 int result = mAudioManager.requestAudioFocus(mOnAudioFocusChangeListener,
                         AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
 
@@ -113,7 +122,7 @@ public class PhrasesFragment extends Fragment {
 
                     // Create and setup the {@link MediaPlayer} for the audio resource associated
                     // with the current word
-                    mMediaPlayer = MediaPlayer.create(getActivity(), word.getAudioResourceId());
+                    mMediaPlayer = MediaPlayer.create(TimeActivity.this, word.getAudioResourceId());
 
                     // Start the audio file
                     mMediaPlayer.start();
@@ -124,14 +133,13 @@ public class PhrasesFragment extends Fragment {
                 }
             }
         });
-
-        return rootView;
     }
 
-
     @Override
-    public void onStop() {
+    protected void onStop() {
         super.onStop();
+        // When the activity is stopped, release the media player resources because we won't
+        // be playing any more sounds.
         releaseMediaPlayer();
     }
 
@@ -141,13 +149,18 @@ public class PhrasesFragment extends Fragment {
     private void releaseMediaPlayer() {
         // If the media player is not null, then it may be currently playing a sound.
         if (mMediaPlayer != null) {
-
+            // Regardless of the current state of the media player, release its resources
+            // because we no longer need it.
             mMediaPlayer.release();
 
+            // Set the media player back to null. For our code, we've decided that
+            // setting the media player to null is an easy way to tell that the media player
+            // is not configured to play an audio file at the moment.
             mMediaPlayer = null;
 
+            // Regardless of whether or not we were granted audio focus, abandon it. This also
+            // unregisters the AudioFocusChangeListener so we don't get anymore callbacks.
             mAudioManager.abandonAudioFocus(mOnAudioFocusChangeListener);
         }
     }
-
 }

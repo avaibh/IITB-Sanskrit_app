@@ -42,10 +42,10 @@ public class WordAdapter extends ArrayAdapter<Word>  {
         Word currentWord = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID sanskrit_text_view.
-        TextView miwokTextView = (TextView) listItemView.findViewById(R.id.sanskrit_text_view);
+        TextView sanskritTextView = (TextView) listItemView.findViewById(R.id.sanskrit_text_view);
         // Get the Sanskrit translation from the currentWord object and set this text on
         // the Sanskrit TextView.
-        miwokTextView.setText(currentWord.getSanskritTranslation());
+        sanskritTextView.setText(currentWord.getSanskritTranslation());
 
         // Find the TextView in the list_item.xml layout with the ID default_text_view.
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.default_text_view);

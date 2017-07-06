@@ -15,6 +15,12 @@
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
     <string name="category_family">परिवार के सदस्य</string>
 
+    <string name="category_temple">देवालयः</string>
+    <string name="category_school">विद्यालयः</string>
+    <string name="category_sports">क्रीद</string>
+    <string name="category_time">समय</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

@@ -5,7 +5,7 @@
     <color name="primary_color">#1F0322</color>
 
     <!-- Primary dark color of the app (shown in the status bar) -->
-    <color name="primary_dark_color">#2F1D1A</color>
+    <color name="primary_dark_color">#18021b</color>
 
     <!-- Background color for app -->
     <color name="tan_background">#FFF7DA</color>
@@ -31,4 +31,6 @@
     <color name="white1">#F6F6F6</color>
     <color name="white2">#F5F3EE</color>
     <color name="black">#2B2B2B</color>
+    <color name="question_background">#b56969</color>
+    <color name="quiz_background">#22264b</color>
 </resources>

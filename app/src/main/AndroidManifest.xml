@@ -23,25 +23,53 @@
                         android:name="android.support.PARENT_ACTIVITY"
                         android:value="com.SansTranslate.android.sanskrit.MainActivity" />
                 </activity>
-        <activity android:name="com.SansTranslate.android.sanskrit.PhrasesActivity" android:label="Phrases"
+        <activity android:name="com.SansTranslate.android.sanskrit.PhrasesActivity" android:label="@string/category_phrases"
             android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.SansTranslate.android.sanskrit.MainActivity"/>
         </activity>
-        <activity android:name="com.SansTranslate.android.sanskrit.FamilyActivity" android:label="Family"
+        <activity android:name="com.SansTranslate.android.sanskrit.FamilyActivity" android:label="@string/category_family"
             android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.SansTranslate.android.sanskrit.MainActivity"/>
         </activity>
-        <activity android:name="com.SansTranslate.android.sanskrit.ColorsActivity" android:label="Colors"
+        <activity android:name="com.SansTranslate.android.sanskrit.ColorsActivity" android:label="@string/category_colors"
             android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.SansTranslate.android.sanskrit.MainActivity"/>
+        </activity>
+        <activity android:name="com.SansTranslate.android.sanskrit.TempleActivity" android:label="@string/category_temple"
+            android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.TEMPLE_ACTIVITY"
+                android:value="com.SansTranslate.android.sanskrit.MainActivity"/>
+        </activity>
+        <activity android:name="com.SansTranslate.android.sanskrit.SchoolActivity" android:label="@string/category_school"
+            android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.SCHOOL_ACTIVITY"
+                android:value="com.SansTranslate.android.sanskrit.MainActivity"/>
+        </activity>
+        <activity android:name="com.SansTranslate.android.sanskrit.SportsActivity" android:label="@string/category_sports"
+            android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.SPORTS_ACTIVITY"
+                android:value="com.SansTranslate.android.sanskrit.MainActivity"/>
+        </activity>
+        <activity android:name="com.SansTranslate.android.sanskrit.TimeActivity" android:label="@string/category_time"
+            android:parentActivityName="com.SansTranslate.android.sanskrit.MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.TIME_ACTIVITY"
                 android:value="com.SansTranslate.android.sanskrit.MainActivity"/>
         </activity>
         <activity android:name="com.SansTranslate.android.sanskrit.TestActivity" android:label="Game Quiz"

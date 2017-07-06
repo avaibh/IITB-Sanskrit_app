@@ -9,14 +9,14 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/black"
+        android:background="@color/quiz_background"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@color/white1">
+            android:background="@color/white2"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/image_quiz"
@@ -31,12 +31,12 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/question_background"
                 android:fontFamily="sans-serif-condensed"
                 android:gravity="left"
                 android:padding="16dp"
                 android:textColor="@color/white1"
                 android:textSize="30sp"
-                android:background="@color/black"
                 tools:text="अस्य आंग्लपदस्य एक संस्कृते समीचीनम् अनुवादः कथम्?" />
         </LinearLayout>
 
@@ -46,11 +46,12 @@
             android:background="@color/white1" />
 
         <RadioGroup
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp"
-            android:paddingLeft="24dp">
+            android:paddingLeft="24dp"
+            android:layout_marginTop="16dp">
 
             <RadioButton
                 android:id="@+id/opt1_radio_button"
@@ -101,18 +102,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <ImageView
                 android:id="@+id/result_image_view"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/list_item_height"
+                android:layout_height="@dimen/list_item_height"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                tools:src="@drawable/ic_thumb_up_white_24dp" />
+
+            <TextView
+                android:id="@+id/result_text_view"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                tools:src="@drawable/ic_thumb_up_white_24dp"
-                android:padding="16dp" />
-        <TextView
-            android:id="@+id/result_text_view"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            tools:text="Well Done"
-            android:layout_weight="1"/>
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                tools:text="Well Done" />
         </LinearLayout>
 
         <LinearLayout
@@ -128,18 +133,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:onClick="checkAnswer"
-                android:padding="8dp"
-                android:text="Submit"
-                android:textSize="16sp" />
+                android:padding="10dp"
+                android:text="जमा करें"
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/next_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:padding="8dp"
-                android:text="Next"
-                android:textSize="16sp" />
+                android:padding="10dp"
+                android:text="अगला"
+                android:textSize="20sp" />
         </LinearLayout>
 
     </LinearLayout>

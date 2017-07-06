@@ -233,17 +233,18 @@ public class TestActivity  extends AppCompatActivity {
         if (correctAnswer.isChecked()) {
             // is checked
             TextView resultTextView = (TextView) findViewById(R.id.result_text_view);
-            resultTextView.setText("Bravo! Correct Answer\n" + "साधु! उचित प्रतिवदति");
+            resultTextView.setText("साधु! उचित प्रतिवदति");
             String color = getString(Integer.parseInt(String.valueOf(R.color.green)));
             resultTextView.setTextColor(Color.parseColor(color));
             resultTextView.setTextSize(20);
 
             ImageView resultImageView = (ImageView) findViewById(R.id.result_image_view);
             resultImageView.setImageResource(R.drawable.ic_thumb_up_white_24dp);
+
         } else {
             // not checked
             TextView resultTextView = (TextView) findViewById(R.id.result_text_view);
-            resultTextView.setText("Wrong Answer! Please try again.\n" + "अनुचित प्रतिवदति! पुनः प्रयत्न करोति");
+            resultTextView.setText("अनुचित प्रतिवदति! पुनः प्रयत्न करोति");
             String color = getString(Integer.parseInt(String.valueOf(R.color.red)));
             resultTextView.setTextColor(Color.parseColor(color));
             resultTextView.setTextSize(20);
